@@ -15,6 +15,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         val binding: ActivityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        binding.obj = LayoutObject()
+        /*
         val myViewModel: MyViewModel = ViewModelProvider(this).get(MyViewModel::class.java)
 
         val nameObserver = Observer<String> { newName ->
@@ -49,5 +51,6 @@ class MainActivity : AppCompatActivity() {
             myViewModel.age.value = "0"
             myViewModel.allText.value = myViewModel.allByteText()
         }
+        */
     }
 }
